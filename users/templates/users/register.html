@@ -1,0 +1,40 @@
+{% extends 'myapp/base.html' %}
+{% block content %}
+<h1 class="text-2xl m-10 font-bold">👤Register User</h1>
+<div class="container py-5">
+    <form class="w-3/5 bg-white shadow-md m-10 rounded px-8 pt-6 pb-8 mb-4" method="post">
+        {% csrf_token %}
+        <div class="mb-2">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="">Username</label>
+            <div class="shadow appearance-none border rounded py-2 px-3 mr-10 text-gray-700 leading-tight">
+                {{form.username}}
+            </div>
+        </div>
+        <div class="mb-2">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="">Email</label>
+            <div class="shadow appearance-none border rounded py-2 px-3 mr-10 text-gray-700 leading-tight">
+                {{form.email}}
+            </div>
+        </div>
+        <div class="mb-2">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="">Password</label>
+            <div class="shadow appearance-none border rounded py-2 px-3 mr-10 text-gray-700 leading-tight">
+                {{form.password1}}
+            </div>
+        </div>
+        <div class="mb-2">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="">Confirm Password</label>
+            <div class="shadow appearance-none border rounded py-2 px-3 mr-10 text-gray-700 leading-tight">
+                {{form.password2}}
+            </div>
+        </div>
+        <button type="submit" class="bg-green-500 text-white px-5 py-2">Register</button>
+    </form>
+    <div class="m-10 ">
+        Already have an account ?
+        <a class="text-indigo-500" href="{% url 'users:login' %}">Login instead</a>
+    </div>
+</div>
+
+
+{% endblock %}
