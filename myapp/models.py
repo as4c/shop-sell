@@ -6,7 +6,7 @@ from django.urls import reverse
 
 
 # Create your models here.
-
+#this is a products models that uses in entire project
 class Product(models.Model):
     def __str__(self):
         return self.name
