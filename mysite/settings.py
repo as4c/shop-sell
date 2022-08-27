@@ -26,10 +26,10 @@ SECRET_KEY = 'django-insecure-idewzfp__x2#!*n)*ayq=2i9*5f2n9_u+(sd=jimr09d@n*9&8
 DEBUG = True
 
 if DEBUG:
-    STRIPE_PUBLISHABLE_KEY = 'pk_test_51LaBgqSHHk5YjedMUdKwzT1saMWp7WNccGt6FNAXdzwyIIJ05BdhOLofcde20M6x2HEEz8Q3OFZ820g6P1Xh6YMs00sZfrZBxf'
-    STRIPE_SECRET_KEY='sk_test_51LaBgqSHHk5YjedMqhf6n2IXaAMrktm8hi2p8CnB91OxiP2LBOBOeTrPNB4NKraG7YVX5cHlyTXGiTohZfqHHVoJ00D3hNax69'
+    STRIPE_PUBLISHABLE_KEY = 'your test publishable key'
+    STRIPE_SECRET_KEY='your test secret key'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
