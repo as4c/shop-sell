@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 Django==4.0.2
 stripe==4.1.0
+=======
+Django==4.0.2
+stripe==4.1.0
+>>>>>>> 2cc12f465768e44dd59be5b0b2db0fa8c7ce86d8
