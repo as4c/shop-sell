@@ -67,8 +67,8 @@ class ProductdDetailView(DetailView):
         context['stripe_publishable_key']=settings.STRIPE_PUBLISHABLE_KEY
         return context
 
-@login_required
 #for function based view 
+@login_required
 def add_product(request):
     if request.method == 'POST':
            name=request.POST.get('name')
